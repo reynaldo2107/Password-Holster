@@ -1,0 +1,311 @@
+object fmHelp: TfmHelp
+  Left = 0
+  Top = 0
+  BorderStyle = bsSizeToolWin
+  Caption = 'Help'
+  ClientHeight = 455
+  ClientWidth = 609
+  Position = poMainFormCenter
+  Quality = ccHighQuality
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Rectangle1: TRectangle
+    Align = alClient
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF3E3D39
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 414.000000000000000000
+    Width = 609.000000000000000000
+  end
+  object Rectangle2: TRectangle
+    Align = alBottom
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF3E3D39
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 41.000000000000000000
+    Position.Y = 414.000000000000000000
+    Width = 609.000000000000000000
+    object Button1: TButton
+      Cancel = True
+      Default = True
+      Height = 28.000000000000000000
+      Position.X = 251.000000000000000000
+      Position.Y = 7.000000000000000000
+      TabOrder = 0
+      Text = 'Ok'
+      Width = 84.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object CalloutPanel1: TCalloutPanel
+    Height = 123.000000000000000000
+    HelpType = htKeyword
+    Padding.Top = 33.000000000000000000
+    Padding.Right = 33.000000000000000000
+    Margins.Top = 45.000000000000000000
+    Margins.Right = 45.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 9.000000000000000000
+    Width = 416.000000000000000000
+    TabOrder = 2
+    CalloutWidth = 10.000000000000000000
+    CalloutLength = 33.000000000000000000
+    CalloutPosition = cpRight
+    object Text5: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 65.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 
+        'Each password you add will be represented by a button. When you ' +
+        'click the button the password is copied to your PC clipboard and' +
+        ' all you have to do is to paste it where it is being prompted fo' +
+        'r. '
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+    object Text1: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 17.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Text = 'Tip 1.'
+      VertTextAlign = taLeading
+      Width = 41.000000000000000000
+    end
+    object Text2: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Font.Style = [fsBold, fsItalic]
+      Height = 37.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 20.000000000000000000
+      Text = 
+        'Give the button label a meaningful text so you remember who'#39's pa' +
+        'ssword it is.'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+  end
+  object CalloutPanel2: TCalloutPanel
+    Height = 86.000000000000000000
+    HelpType = htKeyword
+    Padding.Top = 33.000000000000000000
+    Padding.Right = 33.000000000000000000
+    Margins.Top = 45.000000000000000000
+    Margins.Right = 45.000000000000000000
+    Position.X = 217.000000000000000000
+    Position.Y = 147.000000000000000000
+    Width = 376.000000000000000000
+    TabOrder = 3
+    CalloutWidth = 10.000000000000000000
+    CalloutLength = 33.000000000000000000
+    CalloutPosition = cpLeft
+    object Text3: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 31.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 47.000000000000000000
+      Text = 
+        'To delete a button just delete its button label and press the Sa' +
+        've button.'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+    object Text4: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 17.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 35.000000000000000000
+      Text = 'Tip 2.'
+      VertTextAlign = taLeading
+      Width = 41.000000000000000000
+    end
+    object Text6: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Font.Style = [fsBold, fsItalic]
+      Height = 23.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 39.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Do you want to delete a button?'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+  end
+  object CalloutPanel3: TCalloutPanel
+    Height = 127.000000000000000000
+    HelpType = htKeyword
+    Padding.Top = 33.000000000000000000
+    Padding.Right = 33.000000000000000000
+    Margins.Top = 45.000000000000000000
+    Margins.Right = 45.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 248.000000000000000000
+    Width = 416.000000000000000000
+    TabOrder = 4
+    CalloutWidth = 10.000000000000000000
+    CalloutLength = 33.000000000000000000
+    CalloutPosition = cpRight
+    object Text7: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 46.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 43.000000000000000000
+      Text = 
+        'Export your password information. A file is created that can be ' +
+        'imported later on. This also allows you to have the same informa' +
+        'tion in different computers'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+    object Text8: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Height = 17.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 3.000000000000000000
+      Text = 'Tip 3.'
+      VertTextAlign = taLeading
+      Width = 41.000000000000000000
+    end
+    object Text9: TText
+      ClipChildren = True
+      Color = claBlack
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Font.Style = [fsBold, fsItalic]
+      Height = 23.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 19.000000000000000000
+      Text = 'Protect your Password Information'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+    object Text10: TText
+      ClipChildren = True
+      Color = xFF8D0707
+      Font.Family = 'Tahoma'
+      Font.Size = 12.000000000000000000
+      Font.Style = [fsBold, fsItalic]
+      Height = 32.000000000000000000
+      HorzTextAlign = taLeading
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 40.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 92.000000000000000000
+      Text = 
+        'Remember: Exported data must be imported back using the same pas' +
+        'sword key.'
+      VertTextAlign = taLeading
+      Width = 317.000000000000000000
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 496
+    Top = 32
+    ResourcesBin = {
+      464D585F5354594C4520322E3501061143616C6C6F757450616E656C7374796C
+      65030C020054504630115443616C6C6F757452656374616E676C650009537479
+      6C654E616D65061143616C6C6F757450616E656C7374796C6507436F726E6572
+      730B000946696C6C2E4B696E64070A626B4772616469656E741446696C6C2E47
+      72616469656E742E506F696E74730E0105436F6C6F7207097846463742383230
+      46064F66667365740500000000000000000000000105436F6C6F720708636C61
+      5768697465064F6666736574050000000000000080FF3F00001D46696C6C2E47
+      72616469656E742E5374617274506F736974696F6E2E58050000000000000080
+      FE3F1D46696C6C2E4772616469656E742E5374617274506F736974696F6E2E59
+      050000000000000080FF3F1C46696C6C2E4772616469656E742E53746F70506F
+      736974696F6E2E58050000000000FFFFFFFD3F1C46696C6C2E4772616469656E
+      742E53746F70506F736974696F6E2E5905000000000000000000000648656967
+      68740500000000000000E005400748697454657374080A506F736974696F6E2E
+      580500000000000000BA07400A506F736974696F6E2E590500000000000000E2
+      06400C5374726F6B652E436F6C6F720709784646393739373937075852616469
+      757305000000000000008000400557696474680500000000000000D007400C43
+      616C6C6F757457696474680500000000000000B803400D43616C6C6F75744C65
+      6E6774680500000000000000B003400000}
+  end
+end

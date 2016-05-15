@@ -1,0 +1,110 @@
+object fmGroupName: TfmGroupName
+  Left = 0
+  Top = 0
+  BorderStyle = bsSizeToolWin
+  Caption = 'Group Name'
+  ClientHeight = 156
+  ClientWidth = 373
+  Fill.Kind = bkGradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFF3E3D39
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = claWhite
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.StartPosition.X = 0.500000000000000000
+  Fill.Gradient.StartPosition.Y = 1.000000000000000000
+  Fill.Gradient.StopPosition.X = 0.499999970197677600
+  Fill.Gradient.StopPosition.Y = 0.000000000000000000
+  Position = poMainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnShow = FormShow
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Rectangle1: TRectangle
+    Align = alBottom
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF3E3D39
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 41.000000000000000000
+    Position.Y = 115.000000000000000000
+    Width = 373.000000000000000000
+    object btnOk: TButton
+      Default = True
+      Enabled = False
+      Height = 28.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 7.000000000000000000
+      TabOrder = 0
+      Text = 'Ok'
+      Width = 84.000000000000000000
+      OnClick = btnOkClick
+    end
+    object btnCancel: TButton
+      Cancel = True
+      Height = 28.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 7.000000000000000000
+      TabOrder = 1
+      Text = 'Cancel'
+      Width = 84.000000000000000000
+      OnClick = btnCancelClick
+    end
+  end
+  object Text3: TText
+    AutoSize = True
+    Color = claBlack
+    Font.Family = 'Tahoma'
+    Height = 18.000000000000000000
+    Position.X = 51.000000000000000000
+    Position.Y = 26.000000000000000000
+    Text = 'Group Name:'
+    Width = 71.000000000000000000
+    WordWrap = False
+  end
+  object edtGroupName: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 0
+    Position.X = 51.000000000000000000
+    Position.Y = 46.000000000000000000
+    Width = 275.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    OnChange = edtGroupNameTyping
+    OnTyping = edtGroupNameTyping
+  end
+  object textError: TText
+    AutoSize = True
+    Color = xFF9F0404
+    Font.Family = 'Tahoma'
+    Font.Size = 14.000000000000000000
+    Height = 21.000000000000000000
+    HorzTextAlign = taLeading
+    Position.X = 48.000000000000000000
+    Position.Y = 73.000000000000000000
+    Text = 'Group already exists.'
+    Visible = False
+    Width = 133.000000000000000000
+    WordWrap = False
+  end
+end
